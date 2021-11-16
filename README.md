@@ -10,4 +10,4 @@ This is web-site for BWS - pavers shop.
 
 HTML, SCSS, JS
 
-![Uploading Screenshot 2021-11-16 at 13.21.59.png…]()
+<img width="1425" alt="Screenshot 2021-11-16 at 13 23 09" src="https://user-images.githubusercontent.com/93516505/141976735-6a705c85-a235-4721-a8f4-3e0036babf0a.png">
