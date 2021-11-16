@@ -1,0 +1,64 @@
+.customer-reviews {
+  padding: 7% $narrow-w-padding;
+
+  background: url(/img/rewiews-backgroung.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .rewiew {
+    display: flex;
+    flex-direction: column;
+    background-color: $black;
+    width: 40vw;
+    @include for-tablet {
+      width: 65vw;
+    }
+    @include for-mobile {
+      width: 100%;
+    }
+    padding: 3%;
+    &__card-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__card {
+      opacity: 0;
+      grid-row: 1;
+      grid-column: 1;
+      transition: opacity 1s ease-in;
+      height: auto;
+      &__text {
+        @include text("CircularStd-Book", toEM(18), $white);
+        line-height: 167%;
+      }
+      &__author,
+      &__role {
+        @include text("CircularStd-Book", toEM(17), $green);
+        line-height: 162%;
+      }
+      &__author {
+        margin-top: 3%;
+      }
+    }
+    &__arrows {
+      display: flex;
+      justify-content: flex-end;
+      height: $button-height;
+      z-index: 2;
+      &__left {
+        cursor: pointer;
+        @include icon("left-arrow", $green, $button-height);
+        &:hover {
+          background-color: $white;
+        }
+      }
+      &__right {
+        cursor: pointer;
+        @include icon("right-arrow", $green, $button-height);
+        &:hover {
+          transition: 0.5s;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.first-screen {
+  position: relative;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 100vh;
+  padding: 25vh $wide-w-padding 15vh $wide-w-padding;
+  @include for-tablet-and-mobile {
+    padding: 15vh $narrow-w-padding 5vh $narrow-w-padding;
+  }
+
+  background: url(/img/first-screen-backgroung.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__title {
+    width: 100%;
+    @include for-big-desktop {
+      width: 80%;
+    }
+    @include text("CircularStd-Medium", toEM(100), $white);
+    @include for-mobile {
+      font-size: toEM(60);
+    }
+    line-height: 115%;
+    letter-spacing: -2.5px;
+  }
+  &__subtitle {
+    @include text("CircularStd-Book", toEM(24), $white);
+    line-height: 125%;
+    width: 60%;
+    @include for-tablet-and-mobile {
+      width: 90%;
+    }
+  }
+  &__button {
+    @include contained-button($green, $white, 20%);
+    height: 3.5em;
+    @include for-mobile {
+      width: 50%;
+    }
+    &:hover {
+      transition: 0.5s;
+      background-color: $light-gray;
+    }
+  }
+}

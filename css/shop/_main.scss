@@ -1,0 +1,19 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  @include for-tablet-and-mobile {
+    grid-template-columns: auto 1fr;
+  }
+  grid-column-gap: 2vmax;
+
+  margin-top: $header-height;
+  padding: 0 $narrow-w-padding;
+}
+
+.heart-icon-test {
+  @include icon("heart", $light-gray, 100%);
+  &--filled {
+    @include icon("heart--filled", $green, 100%);
+  }
+}

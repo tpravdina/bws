@@ -1,0 +1,99 @@
+.sort-param {
+  min-width: 150px; //
+  width: 18vw;
+
+  &__wrapper {
+    position: relative;
+    user-select: none;
+    width: 100%;
+  }
+  &__select {
+    display: flex;
+    flex-direction: column;
+    &__trigger {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include text("CircularStd-Book", toEM(14), $green);
+      padding: 0 1em;
+      height: toEM(42);
+      line-height: toEM(42);
+      background: $white;
+      cursor: pointer;
+    }
+  }
+  &__options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $white;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__select.open &__options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  &__option {
+    position: relative;
+    display: block;
+    padding: 0 1em;
+    @include text("CircularStd-Book", toEM(14), $green);
+    line-height: toEM(42);
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      background-color: $almost-white-on-green;
+    }
+    &.selected {
+      color: $white;
+      background-color: $green;
+    }
+  }
+}
+
+.arrow {
+  position: relative;
+  height: toEM(10);
+  width: toEM(10);
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.arrow::before {
+  left: toEM(-3);
+  transform: rotate(-45deg);
+  background-color: $green;
+}
+
+.arrow::after {
+  left: toEM(3);
+  transform: rotate(45deg);
+  background-color: $green;
+}
+
+.open .arrow::before {
+  left: toEM(-3);
+  transform: rotate(45deg);
+}
+
+.open .arrow::after {
+  left: toEM(3);
+  transform: rotate(-45deg);
+}

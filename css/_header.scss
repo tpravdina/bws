@@ -1,0 +1,37 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 $narrow-w-padding;
+  width: 100%;
+  height: $header-height;
+  background-color: $header-footer-color;
+  &__logo {
+    @include main-logo(toEM(32), $black);
+  }
+  &__menu {
+    @include icon("humburger-menu", $black, $header-height/2);
+    cursor: pointer;
+  }
+  &__cart {
+    @include icon("cart", $black, $header-height/2);
+    cursor: pointer;
+  }
+  &--transpanent {
+    background-color: transparent;
+    color: $white;
+    .header__logo {
+      color: $white;
+    }
+    .header__menu,
+    .header__cart {
+      background-color: $white;
+    }
+  }
+}

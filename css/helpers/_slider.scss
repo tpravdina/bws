@@ -1,0 +1,86 @@
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: $white;
+}
+.slider {
+  position: relative;
+  height: 7vmin;
+  margin-top: 4vmin;
+  &__track {
+    width: 100%;
+    height: $slider-track-height;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: $slider-track-height;
+  }
+  &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+    &::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      height: $slider-track-height;
+    }
+    &::-moz-range-track {
+      -moz-appearance: none;
+      height: $slider-track-height;
+    }
+    &::-ms-track {
+      appearance: none;
+      height: $slider-track-height;
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 1.7em;
+      width: 1.7em;
+      border: 3px solid $green;
+      background-color: $white;
+      cursor: pointer;
+      margin-top: $slider-track-height * (-2);
+      pointer-events: auto;
+      border-radius: 50%;
+    }
+    &::-moz-range-thumb {
+      -webkit-appearance: none;
+      height: 1.7em;
+      width: 1.7em;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 3px solid $green;
+      background-color: $white;
+      pointer-events: auto;
+    }
+    &::-ms-thumb {
+      appearance: none;
+      height: 1.7em;
+      width: 1.7em;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 3px solid $green;
+      background-color: $white;
+      pointer-events: auto;
+    }
+    &:active::-webkit-slider-thumb {
+      background-color: $green;
+      //   border: 3px solid $green;
+    }
+  }
+}
+.values {
+  display: flex;
+  justify-content: space-between;
+  @include text("CircularStd-Book", toEM(14), $very-light-gray);
+  width: 100%;
+  position: relative;
+}

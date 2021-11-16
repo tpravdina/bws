@@ -1,0 +1,86 @@
+.product-card {
+  background-color: #e5e5e5;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 1px;
+  & * {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    width: 100%;
+    grid-column: 1 / 6;
+    grid-row: 1 / 9;
+  }
+  &__sale {
+    z-index: 1;
+    grid-column: 5 / 6;
+    grid-row: 1;
+    @include upper-text("CircularStd-Medium", toEM(12), $green);
+
+    visibility: hidden;
+  }
+  &__title {
+    grid-column: 1 / 6;
+    grid-row: 9;
+    @include text("CircularStd-Medium", toEM(14), $green);
+    text-transform: uppercase;
+  }
+  &__price {
+    grid-column: 1 / 4;
+    grid-row: 10;
+    @include upper-text("CircularStd-Book", toEM(16), $black);
+  }
+  &__heart {
+    grid-column: 4;
+    grid-row: 10;
+    padding: 15%;
+    cursor: pointer;
+    .heart-icon {
+      @include icon("heart", $light-gray, 100%);
+      &--filled {
+        @include icon("heart--filled", $green, 100%);
+      }
+    }
+    &--filled {
+      .heart-icon {
+        @include icon("heart--filled", $green, 100%);
+      }
+    }
+  }
+  &__cart {
+    grid-column: 5;
+    grid-row: 10;
+    padding: 15%;
+    cursor: pointer;
+    .cart-icon {
+      @include icon("cart", $light-gray, 100%);
+      &--filled {
+        @include icon("cart--filled", $green, 100%);
+      }
+    }
+    &--filled {
+      .cart-icon {
+        @include icon("cart--filled", $green, 100%);
+      }
+    }
+  }
+  &--discounted--white {
+    .product-card__sale {
+      visibility: visible;
+      background-color: $white;
+      color: $green;
+    }
+  }
+  &--discounted--green {
+    .product-card__sale {
+      visibility: visible;
+      background-color: $green;
+      color: $white;
+    }
+  }
+}

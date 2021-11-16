@@ -1,0 +1,41 @@
+.accordion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0;
+  background-color: $white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  &:hover {
+    .accordion__title {
+      transition: 0.5s;
+      color: $green;
+    }
+    .accordion__icon {
+      transition: 0.5s;
+      background-color: $green;
+    }
+  }
+  &__title {
+    @include text("CircularStd-Medium", toEM(14), $black);
+  }
+  &__icon {
+    @include icon("down", $light-gray, toEM(14));
+  }
+  &__panel {
+    display: none;
+    background-color: $white;
+  }
+  &__text {
+    @include text("CircularStd-Book", toEM(14), $light-gray);
+    line-height: 171%;
+  }
+}
+.active {
+  .accordion__icon {
+    @include icon("up", $light-gray, toEM(14));
+  }
+}

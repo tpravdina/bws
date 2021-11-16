@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/icons/humburger-menu.svg" alt="humburger-menu" class="header__menu">
+        <div class="header__logo">
+            BWS
+        </div>
+        <img src="img/icons/cart.svg" alt="cart" class = 'header__cart'>
+    </header>
+    <main class="main-grid">
+        <div class="side-filter-panel">
+            <h3 class="side-filter-panel__title">Category</h3>
+            <ul class="side-filter-panel__list">
+                <li class="side-filter-panel__list-item">
+                    <input id="all" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="all" class="side-filter-panel__label">All</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="wall" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="wall" class="side-filter-panel__label">Wall</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="slabs" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="slabs" class="side-filter-panel__label">Slabs</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="pavers" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox" checked>
+                    <label for="pavers" class="side-filter-panel__label">Pavers</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="steps" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="steps" class="side-filter-panel__label">Steps, Caps & Curbs</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="enviro" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="enviro" class="side-filter-panel__label">Enviro Products</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="features" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="features" class="side-filter-panel__label">Features</label>
+                </li>
+            </ul>
+            <hr class="side-filter-panel__hr">
+
+            <h3 class="side-filter-panel__title">Products</h3>
+            <ul class="side-filter-panel__list">
+                <li class="side-filter-panel__list-item">
+                    <input id="allPr" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="allPr" class="side-filter-panel__label">All</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="ashford" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="ashford" class="side-filter-panel__label">Ashford</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="belgium" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="belgium" class="side-filter-panel__label">Belgium</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="manhattanPlank" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="manhattanPlank" class="side-filter-panel__label">Manhattan Plank</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="trevista80Smooth" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="trevista80Smooth" class="side-filter-panel__label">Trevista 80 Smooth</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="trevista80Textured" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="trevista80Textured" class="side-filter-panel__label">Trevista 80 Textured</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="richmond80" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="richmond80" class="side-filter-panel__label">Richmond 80</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="adelaide80" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="adelaide80" class="side-filter-panel__label">Adelaide 80</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="stradaNova" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="stradaNova" class="side-filter-panel__label">Strada Nova</label>
+                </li>
+                <li class="side-filter-panel__list-item">
+                    <input id="doubleStandard" class="side-filter-panel__checkbox" name="checkbox-1" type="checkbox">
+                    <label for="doubleStandard" class="side-filter-panel__label">Double Standard</label>
+                </li>
+            </ul>
+            <hr class="side-filter-panel__hr">
+            
+            <div class="side-filter-panel__color-panel color-panel">
+                <h3 class="color-panel__title">Colors</h3>
+                <ul class="color-panel__img-list">
+                    <li><img src="./img/wood-colors/type-1.png" alt="type-1" class="color-panel__img-list-item"></li>
+                    <li><img src="./img/wood-colors/type-2.png" alt="type-2" class="color-panel__img-list-item"></li>
+                    <li><img src="./img/wood-colors/type-3.png" alt="type-3" class="color-panel__img-list-item"></li>
+                    <li><img src="./img/wood-colors/type-4.png" alt="type-4" class="color-panel__img-list-item"></li>
+                    <li><img src="./img/wood-colors/type-5.png" alt="type-5" class="color-panel__img-list-item"></li>
+                </ul>
+            </div>
+
+            <hr class="side-filter-panel__hr">
+            <h3 class="side-filter-panel__title">Price Range</h3>
+            <div class="slider-wrapper" id='sliderWrapper'>
+            </div>
+            <button class="side-filter-panel__price-button" id="priceFilter">OK</button>
+        </div>
+
+        <div class="top-filter-panel">
+            <p class="top-filter-panel__text">Sort by</p>
+            <div class="sort-param">
+                <div class="sort-param__wrapper">
+                    <div class="sort-param__select">
+                        <div class="sort-param__select__trigger"><span>Price Low-Hight</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="sort-param__options">
+                            <span class="sort-param__option selected" data-value="priceLowHight">Price Low-Hight</span>
+                            <span class="sort-param__option " data-value="priceHightLow">Price Hight-Low</span>
+                            <span class="sort-param__option" data-value="alphabet">Alphabet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-filter-panel__tiles"></div>
+            <div class="top-filter-panel__humburger-menu"></div>
+        </div>
+        
+        <ul id="products" class="product-cards-area">
+            
+        </ul>
+
+        <div class="page-area">
+            <button class="page-area__button">
+                <div class="left-icon"></div>
+            </button>
+            <ul class="page-area__list">
+                <li class="page-area__list-item page-area__list-item--active">1</li>
+                <li class="page-area__list-item">2</li>
+                <li class="page-area__list-item">3</li>
+                <li class="page-area__list-item">4</li>
+                <li class="page-area__list-item">5</li>
+                <li class="page-area__list-item">...</li>
+                <li class="page-area__list-item">11</li>
+            </ul>
+            <button class="page-area__button">
+                <div class="right-icon"></div>
+            </button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">BWS</div>
+        <div class="footer__menu">
+            <a href="#" class="footer__menu__item">Design Gallery</a>
+            <a href="shop.html" class="footer__menu__item">Products</a>
+            <a href="#" class="footer__menu__item">Resources</a>
+            <a href="#" class="footer__menu__item">About</a>
+            <a href="#" class="footer__menu__item">Contact</a>
+        </div>
+        <div class="footer__contacts">
+            <button class="footer__contacts__button">
+                <div class="twitter-icon"></div>
+            </button>
+            <button class="footer__contacts__button">
+                <div class="instagram-icon"></div>
+            </button>
+            <button class="footer__contacts__button">
+                <div class="facebook-icon"></div>
+            </button>
+        </div>
+    </footer>
+    <script type='module' src="js/shop.js"></script>
+</body>
+</html>

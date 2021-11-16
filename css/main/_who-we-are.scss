@@ -1,0 +1,43 @@
+.who-we-are {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  grid-gap: $one-column-gap;
+  @include for-mobile {
+    grid-template-columns: 1fr;
+  }
+
+  padding: 5% $narrow-w-padding;
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    min-height: 400px;
+    @include for-mobile {
+      min-height: 300px;
+    }
+  }
+  &__up-title {
+    @include upper-text("CircularStd-Medium", toEM(16), $green);
+  }
+  &__title {
+    @include text("CircularStd-Medium", toEM(20), $black);
+  }
+  &__text {
+    @include text("CircularStd-Book", toEM(15), $light-gray);
+  }
+  &__button {
+    @include outlined-button($green-gray, $green, 50%);
+    &:hover {
+      transition: 0.5s;
+      background-color: $green;
+      color: $white;
+      border: $green;
+    }
+  }
+  &__img {
+    width: 100%;
+    align-self: center;
+  }
+}

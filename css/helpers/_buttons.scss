@@ -1,0 +1,24 @@
+@mixin contained-button($bg-color, $text-color, $width) {
+  display: grid;
+  place-items: center;
+
+  width: $width;
+  height: $button-height;
+  background-color: $bg-color;
+
+  font-family: "CircularStd-Bold";
+  font-size: toEM(18);
+  color: $text-color;
+
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin outlined-button($border-color, $text-color, $width) {
+  @include contained-button(transparent, $text-color, $width);
+  border: 1px solid $border-color;
+}

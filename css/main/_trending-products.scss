@@ -1,0 +1,31 @@
+.trending-products {
+  background-color: $green;
+  padding: $narrow-w-padding;
+  &__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vmin;
+  }
+  &__title {
+    @include text("CircularStd-Medium", toEM(24), $white);
+    text-transform: uppercase;
+  }
+  &__button {
+    @include outlined-button($green-gray, $white, toEM(192));
+    &:hover {
+      transition: 0.5s;
+      background-color: $white;
+      color: $green;
+      border: 1px solid $white;
+    }
+  }
+  &__product-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2vmax;
+
+    list-style: none;
+    padding: 0;
+  }
+}

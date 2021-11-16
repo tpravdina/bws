@@ -1,0 +1,103 @@
+.main-grid {
+  min-height: 100vh - $header-height - $footer-height;
+  margin-top: 1.5 * $header-height;
+  margin-bottom: 0.5 * $header-height;
+  padding: 0 $narrow-w-padding;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include for-tablet-and-mobile {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2 * $gap;
+  }
+  grid-column-gap: $gap;
+}
+.main-img {
+  width: 100%;
+}
+.details {
+  padding: 0 2 * $gap;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-row-gap: 2vmin;
+  align-content: start;
+  &__up-title {
+    @include upper-text("CircularStd-Bold", toEM(12), $light-gray);
+  }
+  &__main-title {
+    @include text("CircularStd-Book", toEM(46), $black);
+  }
+  &__price-title {
+    @include text("CircularStd-Book", toEM(24), $green);
+  }
+  &__text {
+    @include text("CircularStd-Book", toEM(14), $light-gray);
+    line-height: 171%;
+  }
+  &__line {
+    border: 0;
+    height: 1px;
+    background: $very-light-gray;
+  }
+  &__choice-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .color-panel__img-list {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .border-shortways-button {
+      min-width: 150px;
+      @include outlined-button($very-light-gray, $light-gray, 30%);
+      height: toEM(34);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      font-family: "CircularStd-Book";
+      &__down-icon {
+        @include icon("down", $light-gray, toEM(12));
+      }
+    }
+    @include for-little-screen {
+      flex-direction: column;
+      align-items: flex-start;
+      .color-panel {
+        margin-bottom: 5vmin;
+      }
+      .border-shortways-button {
+        width: 100%;
+      }
+    }
+  }
+  &__button-container {
+    width: 100%;
+    margin: 5vmin 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: $gap;
+  }
+  &__add-button {
+    @include contained-button($green, $white, 100%);
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+  &__heart-button {
+    @include outlined-button(
+      $very-light-gray,
+      $very-light-gray,
+      $button-height
+    );
+    .heart-icon {
+      @include icon("heart", $light-gray, 60%);
+      &--filled {
+        @include icon("heart--filled", $green, 60%);
+      }
+    }
+  }
+}

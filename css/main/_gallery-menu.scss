@@ -1,0 +1,36 @@
+.gallery-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5vw;
+
+  height: auto;
+
+  padding: 7% $narrow-w-padding 7% $narrow-w-padding;
+
+  &__card {
+    &__img {
+      transition: filter 1s;
+      width: 100%;
+      filter: grayscale(100%);
+    }
+    background-color: $white;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1));
+    &:hover {
+      .gallery-menu__card__img {
+        transition: filter 2s;
+        filter: none;
+      }
+      .card__button {
+        transition: 0.5s;
+        border-color: $light-gray;
+        .arrow-icon {
+          transition: 0.5s;
+          background-color: $light-gray;
+        }
+      }
+    }
+  }
+  .card {
+    height: toEM(360);
+  }
+}

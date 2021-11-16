@@ -1,0 +1,94 @@
+.footer {
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  padding: 0 $narrow-w-padding;
+  height: $footer-height;
+  @include for-mobile {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: auto;
+  }
+  background-color: $header-footer-color;
+
+  &__logo {
+    @include main-logo(toEM(24), $black);
+    margin-right: toEM(40);
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    @include for-tablet-and-mobile {
+      justify-content: flex-start;
+    }
+    flex-wrap: wrap;
+    row-gap: 1em;
+
+    width: 70%;
+    @include for-tablet-and-mobile {
+      width: 90%;
+    }
+    &__item {
+      min-width: 100px;
+      text-decoration: none;
+      @include upper-text("CircularStd-Book", toEM(12), $gray);
+      &:hover {
+        color: $almost-white-on-green;
+      }
+    }
+  }
+  &__contacts {
+    display: grid;
+    grid-template-columns: $button-height $button-height $button-height;
+    grid-gap: 2vmin;
+
+    @include for-mobile {
+      grid-template-columns: $button-height;
+    }
+    &__button {
+      @include outlined-button($very-light-gray, $light-gray, $button-height);
+      .twitter-icon {
+        @include icon("twitter", $light-gray, 100%);
+        &:hover {
+          background-color: $almost-white-on-green;
+        }
+      }
+      .instagram-icon {
+        @include icon("instagram", $light-gray, 100%);
+        &:hover {
+          background-color: $almost-white-on-green;
+        }
+      }
+      .facebook-icon {
+        @include icon("facebook", $light-gray, 100%);
+        &:hover {
+          background-color: $almost-white-on-green;
+        }
+      }
+    }
+  }
+  &--black {
+    background-color: $black;
+    color: $almost-white-on-black;
+    .footer__logo {
+      color: $white;
+    }
+    .footer__contacts__button {
+      border-color: $black-footer-button-color;
+    }
+    .footer__menu__item {
+      &:hover {
+        color: $white;
+      }
+    }
+    .twitter-icon,
+    .instagram-icon,
+    .facebook-icon {
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+}

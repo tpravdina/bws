@@ -1,0 +1,112 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Balsam",
+            "img": "balsam.jpg",
+            "price": 299,
+            "isForSale": true,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Balsam paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Balsam slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Balsam - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Balsam - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 2,
+            "name": "Ashford",
+            "img": "ashford.jpg",
+            "price": 315,
+            "isForSale": true,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Ashford paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Ashford slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Ashford -Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Ashford - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 3,
+            "name": "Manhattan Plank",
+            "img": "manhattan-plank.jpg",
+            "price": 425,
+            "isForSale": false,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Manhattan Plank paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Manhattan Plank slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Manhattan Plank - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Manhattan Plank - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 4,
+            "name": "Trevista 80 Textured",
+            "img": "trevista-80-textured.jpg",
+            "price": 453,
+            "isForSale": false,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Trevista 80 Textured paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Trevista 50 Textured slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Trevista 80 Textured - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Trevista 80 Textured - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 5,
+            "name": "Adelaide 80",
+            "img": "adelaide-80.jpg",
+            "price": 542,
+            "isForSale": false,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Adelaide 80 paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Adelaide 80 slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Adelaide 80 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Adelaide 80 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 6,
+            "name": "Richmond 80",
+            "img": "richmond-80.jpg",
+            "price": 345,
+            "isForSale": true,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Richmond 80 paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Richmond 80 slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Richmond 80 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Richmond 80 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 7,
+            "name": "Ardesia",
+            "img": "ardesia.jpg",
+            "price": 322,
+            "isForSale": true,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Ardesia paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Ardesia slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Ardesia - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Ardesia - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 8,
+            "name": "Strada Nova",
+            "img": "strada-nova.jpg",
+            "price": 390,
+            "isForSale": true,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Strada Nova paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Strada Nova slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Strada Nova - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Strada Nova - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."     
+        },
+        {
+            "id": 9,
+            "name": "Moderna",
+            "img": "moderna.jpg",
+            "price": 415,
+            "isForSale": false,
+            "type": "Interlocking Pavers",
+            "pricePerSqft": 57.37,
+            "description": "The Moderna paver is ideal for any driveway application by adding instant curb appeal to your landscape. Complimenting the Moderna slab, this collection can be used in both vehicular and pedestrian applications, allowing for a seamless transition from the driveway to backyard.",
+            "additionalInformation": "Additional information - Moderna - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "units": "Units - Moderna - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+.page-area {
+  width: 40%;
+  @include for-tablet-and-mobile {
+    width: 100%;
+  }
+  margin: 5vmin 0 10vmin 0;
+  justify-self: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__button {
+    @include outlined-button($very-light-gray, $light-gray, toEM(36));
+    height: toEM(36);
+    .left-icon {
+      @include icon("left", $light-gray, 100%);
+    }
+    .right-icon {
+      @include icon("right", $light-gray, 100%);
+    }
+  }
+  &__list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__list-item {
+    @include text("CircularStd-Book", toEM(16), $very-light-gray);
+    &--active {
+      color: $green;
+    }
+  }
+}

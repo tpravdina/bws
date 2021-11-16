@@ -1,0 +1,18 @@
+.top-filter-panel {
+  display: grid;
+  grid-template-columns: auto auto 1fr toEM(14) toEM(14);
+  grid-column-gap: $gap;
+  align-items: center;
+  padding: $gap 0;
+  &__text {
+    @include text("CircularStd-Book", toEM(14), $black);
+  }
+  &__tiles {
+    @include icon("tiles", $green, 100%);
+    grid-column: 4;
+  }
+  &__humburger-menu {
+    grid-column: 5;
+    @include icon("humburger-menu-rect", $very-light-gray, 100%);
+  }
+}

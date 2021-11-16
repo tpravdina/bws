@@ -1,0 +1,22 @@
+.assortment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  height: auto;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1));
+
+  &__card {
+    &:hover {
+      transition: 0.5s;
+      background-color: $green;
+      & * {
+        transition: 0.5s;
+        color: $almost-white-on-green;
+      }
+      .card__title {
+        transition: 0.5s;
+        color: $white;
+      }
+    }
+  }
+}

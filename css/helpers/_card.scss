@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: toEM(480);
+  background-color: $white;
+  padding: 10%;
+
+  &__up-title {
+    @include upper-text("CircularStd-Medium", toEM(16), $green);
+    letter-spacing: toEM(1.5);
+  }
+  &__title {
+    @include text("CircularStd-Medium", toEM(20), $black);
+    line-height: 130%;
+  }
+  &__text {
+    @include text("CircularStd-Book", toEM(15), $light-gray);
+  }
+  &__button {
+    @include outlined-button($almost-white-on-green, $white, $button-height);
+    height: $button-height;
+    .arrow-icon {
+      @include icon("arrow", $white, 60%);
+    }
+    visibility: hidden;
+  }
+  &:hover {
+    .card__button {
+      visibility: visible;
+    }
+  }
+}

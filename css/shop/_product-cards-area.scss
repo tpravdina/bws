@@ -1,0 +1,13 @@
+.product-cards-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: $gap;
+  align-items: start;
+  align-content: start;
+
+  list-style: none;
+  padding: 0;
+  .product-card {
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1));
+  }
+}

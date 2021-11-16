@@ -1,0 +1,40 @@
+.color-panel {
+  &__title {
+    margin: 2vmin 0;
+    @include text("CircularStd-Bold", toEM(14), $black);
+  }
+  &__img-list {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    @include for-mobile {
+      justify-content: flex-start;
+    }
+    flex-wrap: wrap;
+  }
+  &__img-list-item {
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
+
+    margin: 5px;
+    height: toEM(35);
+    min-height: 25px;
+
+    border: 2px solid $white;
+    border-radius: 50%;
+    &:hover {
+      box-shadow: 0px 0px 0px 2px $almost-white-on-green;
+    }
+    &--selected {
+      box-shadow: 0px 0px 0px 2px $green;
+      &:hover {
+        box-shadow: 0px 0px 0px 2px $green;
+      }
+    }
+  }
+}

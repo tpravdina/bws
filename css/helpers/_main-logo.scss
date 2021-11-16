@@ -1,0 +1,8 @@
+@mixin main-logo($font-size, $color) {
+  font-family: "Montserrat";
+  font-size: $font-size;
+  text-align: center;
+  letter-spacing: toEM(2.5);
+  color: $color;
+  cursor: default;
+}

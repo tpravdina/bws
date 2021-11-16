@@ -1,0 +1,92 @@
+.side-filter-panel {
+  min-width: 150px;
+  grid-row: 1 / 4;
+  margin-top: 4vmin;
+  &__title {
+    margin: 2vmin 0;
+    @include text("CircularStd-Bold", toEM(14), $black);
+  }
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  &__list-item {
+    @include text("CircularStd-Book", toEM(14), $light-gray);
+  }
+  &__img-list {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    @include for-mobile {
+      justify-content: flex-start;
+    }
+    flex-wrap: wrap;
+  }
+  &__img-list-item {
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
+
+    border: 2px solid $white;
+    border-radius: 50%;
+    &:hover {
+      box-shadow: 0px 0px 0px 2px $almost-white-on-green;
+    }
+    &--selected {
+      box-shadow: 0px 0px 0px 2px $green;
+      &:hover {
+        box-shadow: 0px 0px 0px 2px $green;
+      }
+    }
+  }
+  &__checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  &__checkbox,
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+  }
+  &__label {
+    position: relative;
+  }
+  &__checkbox + &__label:before {
+    content: "";
+    background: $white;
+    border: 2px solid $very-light-gray;
+    display: inline-block;
+    vertical-align: middle;
+    width: toEM(14);
+    height: toEM(14);
+    padding: 2px;
+    margin-right: 1em;
+    text-align: center;
+  }
+  &__checkbox:checked + &__label:before {
+    content: " ";
+    background-image: url("../../img/icons/check.svg");
+    background-size: 100% 100%;
+    border: 2px solid $green;
+  }
+  &__hr {
+    margin: 4vmin 10% 4vmin 0;
+    border: 0;
+    height: 1px;
+    background: $very-light-gray;
+  }
+  &__price-button {
+    margin-top: 2vmin;
+    margin-bottom: 5vmin;
+    @include outlined-button($almost-white-on-green, $green, 50%);
+    &:hover {
+      @include contained-button($green, $white, 50%);
+    }
+  }
+}
