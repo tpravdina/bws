@@ -9,3 +9,5 @@ This is web-site for BWS - pavers shop.
 ## Technologies
 
 HTML, SCSS, JS
+
+![Uploading Screenshot 2021-11-16 at 13.21.59.png…]()
